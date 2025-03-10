@@ -14,12 +14,9 @@ repositories {
 }
 
 dependencies {
-    // Dependência do JUnit para testes (se necessário)
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
-    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
-    // Dependência do SQLite JDBC (adicionada manualmente)
-    implementation files('src/main/java/Conexao/sqlite-jdbc-3.47.1.0.jar')
+    implementation 'mysql:mysql-connector-java:8.0.33' // Conector MySQL
+    implementation 'org.xerial:sqlite-jdbc:3.42.0.0'  // Conector SQLite
 }
 
 java {
